@@ -1,0 +1,3 @@
+
+function showSlides(){ 
+	var d;var f=document.getElementsByClassName("mySlides");var e=document.getElementsByClassName("dot");for(d=0;d<f.length;d++){f[d].style.display="none"}slideIndex++;if(slideIndex>f.length){slideIndex=1}for(d=0;d<e.length;d++){e[d].className=e[d].className.replace(" active","")}f[slideIndex-1].style.display="block";e[slideIndex-1].className+=" active";setTimeout(showSlides,3000)};
